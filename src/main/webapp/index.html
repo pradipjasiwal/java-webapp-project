@@ -2,91 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Deadpool Action Gallery</title>
+  <title>Avenger Hanging on Wall</title>
   <style>
     body {
-      background-color: #b30000; /* Deep red background */
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
+      background-color: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 20px;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
     }
-    h1 {
-      margin-bottom: 40px;
-      font-size: 2.5em;
+
+    .wall {
+      position: relative;
+      width: 100%;
+      height: 100%;
     }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
+
+    .thread {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 2px;
+      height: 120px;
+      background-color: #ccc;
+      transform: translateX(-50%);
     }
-    .gallery img {
-      border: 3px solid #fff;
+
+    .avenger {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      width: 100px;
+      transform: translateX(-50%);
+      animation: swing 3s infinite ease-in-out;
+    }
+
+    .avenger img {
+      width: 100%;
       border-radius: 10px;
-      max-width: 300px;
-      height: auto;
-      box-shadow: 0 0 20px #ff0000;
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
     }
-    .gallery img:hover {
-      transform: scale(1.05);
+
+    @keyframes swing {
+      0%, 100% { transform: translateX(-50%) rotate(0deg); }
+      50% { transform: translateX(-50%) rotate(10deg); }
     }
   </style>
 </head>
 <body>
-  <h1>💥 Deadpool: Locked & Loaded</h1>
-  <div class="gallery">
-    <img src="https://wallpapers.com/images/hd/deadpool-in-mid-air-shooting-8oqpv4ayprxpxyii.jpg" alt="Deadpool Mid-Air Shooting">
-    <img src="https://www.wallpaperflare.com/static/312/120/312/deadpool-shooting-gun-illustration-wallpaper.jpg" alt="Deadpool Gun Illustration">
-    <img src="https://www.peakpx.com/en/hd-wallpaper-desktop-kalzv" alt="Deadpool Firing Comic Art">
+  <div class="wall">
+    <div class="thread"></div>
+    <div class="avenger">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Iron_Man_bleeding_edge.jpg" alt="Iron Man Hanging">
+    </div>
   </div>
+  <h1>🦸 Avengers are always watching from above!</h1>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Deadpool Action Gallery</title>
-  <style>
-    body {
-      background-color: #b30000; /* Deep red background */
-      font-family: 'Segoe UI', sans-serif;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    h1 {
-      margin-bottom: 40px;
-      font-size: 2.5em;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-    .gallery img {
-      border: 3px solid #fff;
-      border-radius: 10px;
-      max-width: 300px;
-      height: auto;
-      box-shadow: 0 0 20px #ff0000;
-      transition: transform 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-  </style>
-</head>
-<body>
-  <h1>💥 Deadpool: Locked & Loaded</h1>
-  <div class="gallery">
-    <img src="https://wallpapers.com/images/hd/deadpool-in-mid-air-shooting-8oqpv4ayprxpxyii.jpg" alt="Deadpool Mid-Air Shooting">
-    <img src="https://www.wallpaperflare.com/static/312/120/312/deadpool-shooting-gun-illustration-wallpaper.jpg" alt="Deadpool Gun Illustration">
-    <img src="https://www.peakpx.com/en/hd-wallpaper-desktop-kalzv" alt="Deadpool Firing Comic Art">
-  </div>
-</body>
-</html>
-
